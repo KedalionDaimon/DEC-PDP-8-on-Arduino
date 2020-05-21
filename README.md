@@ -1,5 +1,5 @@
-# DEC-PDP-8-on-Arduino-DUE
-DEC PDP-8 emulator running FOCAL 69 in 4K for Arduino DUE and better
+# DEC PDP 8 on Arduino
+DEC PDP-8 emulator running FOCAL 69 in 4K for Arduino Mega 2560, Arduino DUE and better
 
 Ladies and Gentlemen,
 
