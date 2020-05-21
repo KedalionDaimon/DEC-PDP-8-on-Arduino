@@ -9,9 +9,9 @@ This is based on the work of jcw/Jean-Claude, who has made an amazing PDP-8 emul
 
 https://git.jeelabs.org/jcw/embello/src/branch/master/explore/1638-pdp8
 
-What you are getting is an ino-file which you just load in the Arduino IDE and flash onto an Arduino DUE (at least), mainly due to the memory requirements.
+What you are getting is an ino-file which you just load in the Arduino IDE and flash onto an Arduino DUE (for the complete version), mainly due to the memory requirements. There is also a somewhat reduced version for the Arduino MEGA 2560 - here, I simply "cut off" a few trailing zeroes from the memory dump, so the mem array is SMALLER than 4K, and I am not entirely sure what implications this will have in general, but so far it works. This compromise is needed because the MEGA 2560 has only 8KB SRAM, and a full memory array allocates all of that space to mem[].
 
-Then, once having loaded it, open a terminal emulator of some sort (I am using Picocom on Linux) and ... interact! The built-in Serial Monitor of the Arduino IDE will NOT work, as it will not allow you to terminate lines.
+Then, once having loaded it, open a terminal emulator of some sort (I am using Picocom on Linux) and ... interact! IN CAPITAL LETTERS ONLY. REMEMBER THIS IS 1969 AND LOWER CASE LETTERS ARE AN UNAFFORDABLE LUXURY ONLY AVAILABLE TO THE WEALTHIEST KINGS OF EUROPE. The built-in Serial Monitor of the Arduino IDE will NOT work, as it will not allow you to terminate lines.
 
 When done, type Ctrl-Backslash to quit. You will see a memory dump. This is in the cleanup()-function, which you may adjust accordingly if you so wish. The idea is, you could perhaps copy and re-use that memory dump in order to initialize the system to your taste and possibly thereby preserve your work, too.
 
