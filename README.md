@@ -17,4 +17,6 @@ When done, type Ctrl-Backslash to quit. You will see a memory dump. This is in t
 
 Consider this a quick-and-dirty and highly experimental port - no warranties of its functionality of any kind are given.
 
+You should be able to run any other software, provided it runs on 4K and you get a memory dump of jcw's system, and adjust the starting address accordingly.
+
 Nino Ivanov, 21st May 2020.
