@@ -279,7 +279,7 @@ void setup() {
     for (;;) {
         iena >>= 1; // implements delayed enabling, relies on sign extension
 
-        static short counter; // HACK: every 65536 ops, we fake an interrupt
+        static char counter; // HACK: every 256 ops, fake interrupt (changed short to char)
         if ((iena & 1) && ++counter == 0) {
             mem[0] = pc;
             pc = 1;
